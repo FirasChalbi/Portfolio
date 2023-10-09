@@ -143,6 +143,21 @@ const chatMessages = [
           "Ready to explore more? Check out my other project channels and feel free to chat with me about anything related to web development, React.js, Node.js, or MongoDB. 🌐"
         ],
       },
+      {
+        project: 'CV',
+        link: '',
+        img: [],
+        messages: [
+          'Welcome to the channel for Email Sender! 🚀',
+          "Email Sender is a tool for sending and managing emails efficiently. It's a project that focuses on simplifying email communication.",
+          "Here's the tech stack I used for this project:",
+          "- Front-end: React.js",
+          "Check out the live demo of this project [here].",
+          "",
+          "If you're interested in the code or want to learn more about the project, feel free to ask. I'm here to provide insights and answer any questions you have!",
+          "Ready to explore more? Check out my other project channels and feel free to chat with me about anything related to web development, React.js, Node.js, or MongoDB. 🌐"
+        ],
+      },
   ];
   
   export default chatMessages;

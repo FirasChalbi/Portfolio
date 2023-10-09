@@ -8,7 +8,7 @@ import { MdKeyboardVoice } from "react-icons/md";
 import {WelcomeContent, AnnouncementContent} from './Welcome'
 
 const Projects = ['Stay Alive', 'ProjectX', 'Flouci Payment Integration', 'Virgule', 'Web Scrapping', 'Chat App', 'Workout Buddy', 'Todo App', 'Portfolio', 'Email Sender'];
-const questions = ['Soon'];
+const questions = ['Soon' , 'CV'];
 
 const ServerImage = () => {
   const [selectedWord, setSelectedWord] = useState(null);
