@@ -63,7 +63,7 @@ const Content = ({ selectedWord }) => {
   
   const Post = ({ name, timestamp, text, imageUrls, link }) => {
     const seed = Math.round(Math.random() * 100);
-  
+    
     return (
       <div className="post ml-[-65px] relative group">
         <div className="avatar-wrapper">
