@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect,useState } from 'react';
 
 const useLocalStorage = (key, initialValue) => {
   const [storedValue, setStoredValue] = useState(() => {
@@ -14,27 +14,29 @@ const useLocalStorage = (key, initialValue) => {
   const setValue = (value) => {
     try {
       const valueToStore = value instanceof Function ? value(storedValue) : value;
-
       setStoredValue(valueToStore);
-
       window.localStorage.setItem(key, JSON.stringify(valueToStore));
     } catch (error) {
       console.log(error);
     }
   };
+  
   return [storedValue, setValue];
 };
 
 const useDarkMode = () => {
-  const [enabled, setEnabled] = useLocalStorage('dark-theme');
-  const isEnabled = typeof enabledState === 'undefined' && enabled;
+  const [enabled, setEnabled] = useLocalStorage('dark-theme', false);
 
   useEffect(() => {
     const className = 'dark';
     const bodyClass = window.document.body.classList;
 
-    isEnabled ? bodyClass.add(className) : bodyClass.remove(className);
-  }, [enabled, isEnabled]);
+    if (enabled) {
+      bodyClass.add(className);
+    } else {
+      bodyClass.remove(className);
+    }
+  }, [enabled]);
 
   return [enabled, setEnabled];
 };
