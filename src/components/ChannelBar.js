@@ -44,7 +44,7 @@ const ServerImage = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="channel-bar  hidden xl:flex flex-col justify-between w-[18rem] shrink-0  h-screen top-0"
+        className="channel-bar xl:flex flex-col justify-between w-[18rem] shrink-0  h-screen top-0"
       >
         <div className="p-4">
           <ChannelBlock />
