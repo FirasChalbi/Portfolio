@@ -15,7 +15,7 @@ const chatMessages = [
       },
       {
         project: 'ProjectX',
-        link: 'https://github.com/FirasChalbi/ProjectX',
+        link: 'https://barkaa.netlify.app/',
         img: ["https://i.imgur.com/y6moVXp.png", "https://i.imgur.com/0m1NJcq.png", "https://i.imgur.com/m06xDRN.png"],
         messages: [
           'Welcome to the channel for Project 2, titled "ProjectX - Still looking for good name"! 🚀',
